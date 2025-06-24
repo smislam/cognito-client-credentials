@@ -1,0 +1,31 @@
+{
+  "name": "cognito-client-credentials",
+  "version": "0.1.0",
+  "bin": {
+    "cognito-client-credentials": "bin/cognito-client-credentials.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.150",
+    "@types/jest": "^30.0.0",
+    "@types/node": "24.0.3",
+    "aws-cdk": "^2.1018.1",
+    "esbuild": "^0.25.5",
+    "jest": "^30.0.0",
+    "ts-jest": "^29.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.8.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.830.0",
+    "aws-cdk-lib": "2.201.0",
+    "aws-jwt-verify": "^5.1.0",
+    "constructs": "^10.4.2",
+    "node-fetch": "^3.3.2"
+  }
+}
