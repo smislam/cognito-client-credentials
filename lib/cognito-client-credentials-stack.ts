@@ -136,15 +136,15 @@ export class CognitoClientCredentialsStack extends cdk.Stack {
 
     new cdk.CfnOutput(this, 'auth-url', {
       value: `https://${userPoolDomain.domainName}.auth.${cdk.Aws.REGION}.amazoncognito.com/oauth2/token`,
-      exportName: 'loadBalancerDnsName'
+      exportName: 'auth-url'
     });
     new cdk.CfnOutput(this, 'api-url', {
       value: `http://${alb.loadBalancerDnsName}/api`,
-      exportName: 'loadBalancerDnsName'
+      exportName: 'api-url'
     });
     new cdk.CfnOutput(this, 'client-url', {
       value: `http://${alb.loadBalancerDnsName}/client`,
-      exportName: 'loadBalancerDnsName'
+      exportName: 'client-url'
     });
 
   }
